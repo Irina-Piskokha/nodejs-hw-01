@@ -9,6 +9,7 @@ export const addOneContact = async () => {
     const newContact = createFakeContact();
     contacts.push(newContact);
 
+    console.log(newContact);
     await writeContacts(contacts);
   } catch (error) {
     console.log(error);
